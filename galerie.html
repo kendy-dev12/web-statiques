@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacmel - Capitale culturelle d'Haïti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop style="display: none;">
+        <source src="music/musique.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jacmel<span>Tourisme</span></div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="A propos.html">A propos de jacmel</a></li>
+                    <li><a href="sites touristiques.html">sites touristiques</a></li>
+                    <li><a href="galerie.html">galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="btn-theme">🌙 Mode Nuit</button>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav> 
+    </header>
+    <section class="diaporama-container">
+        <h1>Galerie Photos de Jacmel</h1>
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="images/entree.jpg" alt="Entree de la ville  2">
+                <div class="caption">Entree de la ville</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/image.jpg" alt="Carnaval de Jacmel 1">
+                <div class="caption">Carnaval de Jacmel </div>
+            </div>
+            <div class="slide fade">
+                <img src="images/bassin.jpg" alt="Bassin bleu 2">
+                <div class="caption">Bassin bleu</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/raymond.jpg" alt="Raymond les bains">
+                <div class="caption">Raymond les bains</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/centre.webp" alt="Centre Historique">
+                <div class="caption">Centre Historique</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/cathe.jpg" alt="Cathédrale Saint-Philippe">
+                <div class="caption">Cathédrale Saint-Philippe</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/img.jpg" alt="Artisanat Jacmel">
+                <div class="caption">Artisanat Jacmel</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/defile.jpg" alt="Defile carnaval">
+                <div class="caption">Defile carnaval</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/image2.jpg" alt="Bor de mer">
+                <div class="caption">Bor de mer</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/peint.jpg" alt="Peinture Haïtienne">
+                <div class="caption">Peinture Haïtienne</div>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top">⬆</button>
+    <footer>
+        <p>&copy; 2026 Projet web statique - Tous droits réservés.</p>
+        <p id="datetime"></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

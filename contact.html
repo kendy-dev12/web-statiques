@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacmel - Capitale culturelle d'Haïti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop style="display: none;">
+        <source src="music/musique.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jacmel<span>Tourisme</span></div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="A propos.html">A propos de jacmel</a></li>
+                    <li><a href="sites touristiques.html">sites touristiques</a></li>
+                    <li><a href="galerie.html">galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                 <button id="themeToggle" class="btn-theme">🌙 Mode Nuit</button>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <h1>Contactez-nous</h1>
+        <div id="message-confirmation" class="alert-succes" style="display: none;"></div>
+        <form id="contactForm" onsubmit="return validerFormulaire(event)">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="(+509) 4868-7890" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Envoyer</button>
+        </form>
+    </section>
+
+    <button id="backToTop" class="back-to-top">retour en haut</button>
+    <footer>
+        <p>&copy; 2026 Projet web statique - Tous droits réservés.</p>
+        <p id="datetime"></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

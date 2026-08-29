@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacmel - Capitale culturelle d'Haïti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop style="display: none;">
+        <source src="music/musique.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Jacmel<span>Tourisme</span></div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="A propos.html">A propos de jacmel</a></li>
+                    <li><a href="sites touristiques.html">sites touristiques</a></li>
+                    <li><a href="galerie.html">galerie</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button id="themeToggle" class="btn-theme">🌙 Mode Nuit</button>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+        </nav>
+    </header>
+    <main class="container">
+            <h1>Sites Touristiques Incontournables</h1>
+            <div class="site-grid">
+                <div class="card">
+                <article class="site-card">
+                    <h3>Bassin bleu</h3>
+                    <p>Un ensemble de bassins naturels aux eaux turquoise niches dans la montagne, accesssible par une randonnee memorable.</p>
+                    <image src="images/bassinbleu.jpg" alt="Bassin bleu"></image>
+                </article>
+                </div>
+
+                <div class="card">
+                <article class="site-card">
+                    <h3>Plage Raymond-les bains</h3>
+                    <p>Une magnifique plage de sable fin bordee de cocotiers, parfaite pour se detendre et deguster des fruits de mer frais.</p>
+                    <image src="images/raymond.jpg" alt="Plage Raymond-les bains"></image>
+                </article>
+                </div>
+
+                <div class="card">
+                <article class="site-card">
+                    <h3>Cathedrale Saint jacques et Saint philippe</h3>
+                    <p>Un monument historique imposant situe au coeur de la ville, temoin du riche patrimoine religieux de jacmel.</p>
+                    <image src="images/cathe.jpg" alt="Cathedrale Saint jacques et Saint philippe"></image>
+                </article>
+                </div>
+
+                <div class="card">
+                <article class="site-card">
+                    <h3>Centre historistique</h3>
+                    <p>Un quartier celebre pour ses maisons victoriennes et son architecture en fer forge datant du XIXe siecle.</p>
+                    <image src="images/centr.webp" alt="Centre historistique"></image>
+                </article>
+                </div>
+
+                <div class="card">
+                <article class="site-card">
+                    <h3>Galeries d'arts et Ateliers d'artisanat</h3>
+                    <p>Decouvrez le savoir-faire des artisants locaux qui fabriquent les celebres masques de carnaval et des peintures naives.</p>
+                    <image src="images/img.jpg" alt="aleries d'arts et Ateliers d'artisanat"></image>
+                </article>
+                </div>
+            </div>
+    </main>
+    <button id="backToTop" class="back-to-top">retour en haut</button>
+    <footer>
+        <p>&copy; 2026 Projet web statique - Tous droits réservés.</p>
+        <p id="datetime"></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
